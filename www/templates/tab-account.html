@@ -3,7 +3,16 @@
   <body>
     <ion-view title="Account">
       <ion-content class="padding">
-        <h1>Account</h1>
+        <h3>Login:</h3>
+        <div class="list">
+          <label class="item item-input"><span class="input-label">Username     </span>
+            <input type="text" ng-model="user.username">
+          </label>
+          <label class="item item-input"><span class="input-label">Password</span>
+            <input type="password" ng-model="user.password">
+          </label>
+          <button ng-click="login(user)" class="button button-energized button-full loginButton">Login</button>
+        </div>
       </ion-content>
     </ion-view>
   </body>
