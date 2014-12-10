@@ -1,5 +1,5 @@
 (function(){
   'use strict';
   angular.module('starter')
-  .value('origin', 'https://xmxpiyrywc.localtunnel.me');
+  .value('origin', 'https://mighty-waters-4871.herokuapp.com');
 })();

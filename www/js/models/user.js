@@ -5,7 +5,7 @@
   .factory('User', ['$http', 'origin', function($http, origin){
 
     function login(user){
-      console.log('ORIGIN = = = =', origin)
+      console.log('ORIGIN = = = =', origin);
       return $http.post(origin + '/login', user);
     }
 

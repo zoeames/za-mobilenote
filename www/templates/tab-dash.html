@@ -3,7 +3,6 @@
   <body>
     <ion-view title="Dashboard">
       <ion-content class="padding">
-        <h1>Dashboard</h1>
         <h5 ng-show="!rootuser.username">Login to see your dashboard</h5>
         <div ng-show="rootuser.username" class="list"><a href="#" class="item item-thumbnail-left"><img ng-src="{{rootuser.avatar}}">
             <h3>{{rootuser.username}}</h3>

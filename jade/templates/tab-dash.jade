@@ -2,7 +2,6 @@ html
   body
     ion-view(title='Dashboard')
       ion-content.padding
-        h1 Dashboard
         h5(ng-show='!rootuser.username') Login to see your dashboard
         .list(ng-show='rootuser.username')
           a.item.item-thumbnail-left(href='#')
