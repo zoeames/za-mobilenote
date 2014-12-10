@@ -3,8 +3,8 @@
   angular.module('starter')
 
   .controller('NoteDetailCtrl', function($scope, $state, Note){
-    //$scope.moment = moment;
     Note.show($state.params.noteId).then(function(response){
+      $scope.moment = moment;
       $scope.note = response.data;
     });
   });
