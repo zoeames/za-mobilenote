@@ -11,5 +11,7 @@ html
           ol(ng-repeat='tag in note.tags')
             li {{tag}}
         h3 Photos:
+        button.button.button-calm(ng-click='snap()') Take Photo
+        button.button.button-energized(ng-click='choose()') Choose Photo
         .item.item-body(ng-repeat='url in note.urls')
           img.full-image(ng-src='{{url}}')

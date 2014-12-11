@@ -19,6 +19,10 @@
       return $http.get(origin + '/notes/' + noteId);
     }
 
-    return {count:count, query:query, show:show};
+    function addPhoto(noteId, b64){
+      return $http.post(origin + '/notes/' + noteId + '/addPhoto', {b64:b64});
+    }
+
+    return {count:count, query:query, show:show, addPhoto:addPhoto};
   }]);
 })();
